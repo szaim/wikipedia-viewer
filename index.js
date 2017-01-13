@@ -1,9 +1,9 @@
 
 $(document).ready(function(){
-    $('.btn').click(function() {
+    $('.fa-search').click(function() {
         $.ajax({
             url: 'http://en.wikipedia.org/w/api.php',
-            data: { action: 'query', list: 'search', srsearch: $("input[name=Wikipedia]").val(), format: 'json' },
+            data: { action: 'query', list: 'search', srsearch: $("input[name=search]").val(), format: 'json' },
             dataType: 'jsonp',
             success: processResult
         });
@@ -12,7 +12,8 @@ $(document).ready(function(){
 
   function processResult(apiResult){
   	for(var i = 0; i < apiResult.query.search.length; i++) {
-		$(".display-result").append("<li>" + apiResult.query.search[i].title + "</li>");
+  		$(".list-group").append("<div class='col-md-12 list'><h3>" + apiResult.query.search[i].title + "</h3>"
+  								+ "<p>" + apiResult.query.search[i].snippet + "</p></div>");
   	}
   	
   }

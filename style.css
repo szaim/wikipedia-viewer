@@ -1,4 +1,6 @@
-
+body {
+    background-color: #FFC300;
+}
 .wrapper {
     margin-top: 15em;
 }
