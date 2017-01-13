@@ -28,3 +28,18 @@ input[type=text]:hover, input[type=text]:focus {
     position: absolute;
     color: #808080;
 }
+.list-group {
+    margin-top: -10em;   
+}
+.list {
+    border: 1px solid #ccc;
+    height: 7em;
+    padding-top: 15px;
+    border-radius: 7px;
+    background: #F1F1F0;
+    margin-top: 1em;
+}
+
+.list:hover {
+    border-left: 5px solid #ce1302;
+}
