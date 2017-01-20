@@ -1,8 +1,19 @@
 body {
     background-color: #FFC300;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: white;
+  font-family: 'Bungee Shade', cursive;
+  font-weight: bold;
+}
+
 .wrapper {
-    margin-top: 15em;
+    margin-top: 5px;
+    left: 20px;
 }
 
 input[type=text] {
